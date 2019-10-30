@@ -35,3 +35,5 @@ def parse(fname):
             if cwd != [] and cwd != '/':
                 process(line, usr_cmds)
             line = file.readline()
+
+    return usr_cmds
