@@ -1,4 +1,6 @@
 import re
+import os
+from collections import defaultdict 
 
 def non_basedir_command(line):
     '''
@@ -18,7 +20,7 @@ def process(line, usr_cmds):
     just adds command to list
     '''
     pattern = re.compile('filename:.+\]: (.+)')
-    cmd = pattern.search(line)
+    cmd = pattern.search(line).groups(0)[0]
     usr_cmds.append(cmd)
 
 def parse(fname):
@@ -38,9 +40,25 @@ def parse(fname):
 
     return usr_cmds
 
-def get_first_command(cmd_lst):
-    cnt_dict = {}
+def count_first_command(cmd_lst, cnt_dict):
     for line in cmd_lst:
-	cnt_dict[line.split()[0]] = cnt_dict.get(0, line.split()[0]) + 1
+        cnt_dict[line.split()[0]] = cnt_dict.get(line.split()[0], 0) + 1
     return cnt_dict
+def groupby_first_command(cmd_lst, grp_dict):
+    for line in cmd_lst:
+        grp_dict[line.split()[0]].append(line)
+    return grp_dict
+
+dic = {}
+grouped = defaultdict(list)
+for fname in os.listdir('/root/data/101_logs/'):
+    if os.path.exists('/root/data/101_logs/' + fname + '/Authlog'):
+        tmp_lst = parse('/root/data/101_logs/' + fname + '/Authlog')
+        dic = count_first_command(tmp_lst, dic)
+        grouped = groupby_first_command(tmp_lst, grouped)
+for fname in os.listdir('/root/data/102_logs/'):
+    if os.path.exists('/root/data/102_logs/' + fname + '/Authlog'):
+        tmp_lst = parse('/root/data/102_logs/' + fname + '/Authlog')
+        dic = count_first_command(tmp_lst, dic)
+        grouped = groupby_first_command(tmp_lst, grouped)
 
