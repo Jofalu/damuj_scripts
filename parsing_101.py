@@ -37,3 +37,10 @@ def parse(fname):
             line = file.readline()
 
     return usr_cmds
+
+def get_first_command(cmd_lst):
+    cnt_dict = {}
+    for line in cmd_lst:
+	cnt_dict[line.split()[0]] = cnt_dict.get(0, line.split()[0]) + 1
+    return cnt_dict
+
