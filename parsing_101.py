@@ -39,7 +39,10 @@ def parse(fname):
             line = file.readline()
 
     return usr_cmds
-
+def is_reject(fname):
+    with open(fname) as fp:
+        line = fp.readline()
+        return line != "DROP"
 def count_first_command(cmd_lst, cnt_dict):
     for line in cmd_lst:
         cnt_dict[line.split()[0]] = cnt_dict.get(line.split()[0], 0) + 1
@@ -49,8 +52,10 @@ def groupby_first_command(cmd_lst, grp_dict):
         grp_dict[line.split()[0]].append(line)
     return grp_dict
 
-dic = {}
-grouped = defaultdict(list)
+drop_dic = {}
+reject_dic = {}
+drop_group = defaultdict(list)
+reject_grou = defaultdict(list)
 for fname in os.listdir('/root/data/101_logs/'):
     if os.path.exists('/root/data/101_logs/' + fname + '/Authlog'):
         tmp_lst = parse('/root/data/101_logs/' + fname + '/Authlog')
