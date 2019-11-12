@@ -42,7 +42,7 @@ def parse(fname):
 def is_reject(fname):
     with open(fname) as fp:
         line = fp.readline()
-        return line != "DROP"
+        return line != "REJECT\n"
 def count_first_command(cmd_lst, cnt_dict):
     for line in cmd_lst:
         cnt_dict[line.split()[0]] = cnt_dict.get(line.split()[0], 0) + 1
@@ -56,22 +56,28 @@ drop_dic = {}
 reject_dic = {}
 drop_group = defaultdict(list)
 reject_group = defaultdict(list)
+rej_cnt = 0
+drop_cnt = 0
 for fname in os.listdir('/root/data/101_logs/'):
     if os.path.exists('/root/data/101_logs/' + fname + '/Authlog'):
         tmp_lst = parse('/root/data/101_logs/' + fname + '/Authlog')
-        if is_reject('/root/data/101_logs/marker'):
+        if is_reject('/root/data/101_logs/' + fname + '/marker'):
             reject_dic = count_first_command(tmp_lst, reject_dic)
             reject_group = groupby_first_command(tmp_lst, reject_group)
+            rej_cnt += 1
         else:
             drop_dic = count_first_command(tmp_lst, drop_dic)
             drop_group = groupby_first_command(tmp_lst, drop_group)
+            drop_cnt += 1
+
 for fname in os.listdir('/root/data/102_logs/'):
     if os.path.exists('/root/data/102_logs/' + fname + '/Authlog'):
         tmp_lst = parse('/root/data/102_logs/' + fname + '/Authlog')
-        if is_reject('/root/data/102_logs/marker'):
+        if is_reject('/root/data/102_logs/' + fname + '/marker'):
             reject_dic = count_first_command(tmp_lst, reject_dic)
             reject_group = groupby_first_command(tmp_lst, reject_group)
+            rej_cnt += 1
         else:
             drop_dic = count_first_command(tmp_lst, drop_dic)
             drop_group = groupby_first_command(tmp_lst, drop_group)
-
+            drop_cnt += 1
