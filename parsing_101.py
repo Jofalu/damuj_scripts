@@ -56,18 +56,25 @@ drop_dic = {}
 reject_dic = {}
 drop_group = defaultdict(list)
 reject_group = defaultdict(list)
+
 rej_cnt = 0
 drop_cnt = 0
+
+rej_n_cmds = []
+drop_n_cmds = []
+
 for fname in os.listdir('/root/data/101_logs/'):
     if os.path.exists('/root/data/101_logs/' + fname + '/Authlog'):
         tmp_lst = parse('/root/data/101_logs/' + fname + '/Authlog')
         if is_reject('/root/data/101_logs/' + fname + '/marker'):
             reject_dic = count_first_command(tmp_lst, reject_dic)
             reject_group = groupby_first_command(tmp_lst, reject_group)
+            rej_n_cmds.append(len(tmp_lst))
             rej_cnt += 1
         else:
             drop_dic = count_first_command(tmp_lst, drop_dic)
             drop_group = groupby_first_command(tmp_lst, drop_group)
+            drop_n_cmds.append(len(tmp_lst))
             drop_cnt += 1
 
 for fname in os.listdir('/root/data/102_logs/'):
@@ -76,8 +83,10 @@ for fname in os.listdir('/root/data/102_logs/'):
         if is_reject('/root/data/102_logs/' + fname + '/marker'):
             reject_dic = count_first_command(tmp_lst, reject_dic)
             reject_group = groupby_first_command(tmp_lst, reject_group)
+            rej_n_cmds.append(len(tmp_lst))
             rej_cnt += 1
         else:
             drop_dic = count_first_command(tmp_lst, drop_dic)
             drop_group = groupby_first_command(tmp_lst, drop_group)
+            drop_n_cmds.append(len(tmp_lst))
             drop_cnt += 1
