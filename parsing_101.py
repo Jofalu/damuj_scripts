@@ -1,5 +1,6 @@
 import re
 import os
+from datetime import dateime
 from collections import defaultdict 
 
 def non_basedir_command(line):
@@ -12,7 +13,18 @@ def non_basedir_command(line):
     if len(cwd) == 0:
         return []
     else:
-        return cwd[0] 
+        return cwd[0]
+
+def get_timestamp(line):
+    '''
+    Takes line from Authlog and returns datetime object for the timestamp of the line
+    '''  
+    spl_arr = line.split()
+    date_str = spl_arr[0] + ' ' + spl_arr[1] + ' ' + spl_arr[2]
+    return datetime.strptime(date_str, '%b %d %H:%M:%S')
+
+def is_disconnect(line):
+    return "Disconnected from " in line
 
 def process(line, usr_cmds):
     ''' 
@@ -27,18 +39,31 @@ def parse(fname):
     '''
     Parses through entire authlog file.
     '''
+    start_time = None
+    end_time = None
     usr_cmds = []
     with open(fname) as file:
         #loop through each line
         line = file.readline()
         while line:
+            # Parse timestamp of first line
+            if start_time is None:
+                start_time = get_timestamp(line)
+
             # If cwd is in line and is not from '/' process line
             cwd = non_basedir_command(line)
             if cwd != [] and cwd != '/':
                 process(line, usr_cmds)
+
+            disconn = is_disconnect(line)
+            if disconn:
+                end_time = get_timestamp(line)
+
             line = file.readline()
 
-    return usr_cmds
+
+    return usr_cmds, start_time, end_time
+
 def is_reject(fname):
     with open(fname) as fp:
         line = fp.readline()
@@ -65,7 +90,7 @@ drop_n_cmds = []
 
 for fname in os.listdir('/root/data/101_logs/'):
     if os.path.exists('/root/data/101_logs/' + fname + '/Authlog'):
-        tmp_lst = parse('/root/data/101_logs/' + fname + '/Authlog')
+        tmp_lst, tmp_st, tmp_end = parse('/root/data/101_logs/' + fname + '/Authlog')
         if is_reject('/root/data/101_logs/' + fname + '/marker'):
             reject_dic = count_first_command(tmp_lst, reject_dic)
             reject_group = groupby_first_command(tmp_lst, reject_group)
@@ -79,7 +104,7 @@ for fname in os.listdir('/root/data/101_logs/'):
 
 for fname in os.listdir('/root/data/102_logs/'):
     if os.path.exists('/root/data/102_logs/' + fname + '/Authlog'):
-        tmp_lst = parse('/root/data/102_logs/' + fname + '/Authlog')
+        tmp_lst, tmp_st, tmp_end = parse('/root/data/102_logs/' + fname + '/Authlog')
         if is_reject('/root/data/102_logs/' + fname + '/marker'):
             reject_dic = count_first_command(tmp_lst, reject_dic)
             reject_group = groupby_first_command(tmp_lst, reject_group)
