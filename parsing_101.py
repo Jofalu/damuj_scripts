@@ -94,7 +94,7 @@ drop_time = []
 for fname in os.listdir('/root/data/101_logs/'):
     if os.path.exists('/root/data/101_logs/' + fname + '/Authlog'):
         tmp_lst, tmp_st, tmp_end = parse('/root/data/101_logs/' + fname + '/Authlog')
-        tmp_diff = if tmp_end is None None else (tmp_end - tmp_st).seconds
+        tmp_diff = None if tmp_end is None else (tmp_end - tmp_st).seconds
         if is_reject('/root/data/101_logs/' + fname + '/marker'):
             reject_dic = count_first_command(tmp_lst, reject_dic)
             reject_group = groupby_first_command(tmp_lst, reject_group)
@@ -111,7 +111,7 @@ for fname in os.listdir('/root/data/101_logs/'):
 for fname in os.listdir('/root/data/102_logs/'):
     if os.path.exists('/root/data/102_logs/' + fname + '/Authlog'):
         tmp_lst, tmp_st, tmp_end = parse('/root/data/102_logs/' + fname + '/Authlog')
-        tmp_diff = if tmp_end is None None else (tmp_end - tmp_st).seconds
+        tmp_diff = None if tmp_end is None else (tmp_end - tmp_st).seconds
         if is_reject('/root/data/102_logs/' + fname + '/marker'):
             reject_dic = count_first_command(tmp_lst, reject_dic)
             reject_group = groupby_first_command(tmp_lst, reject_group)
